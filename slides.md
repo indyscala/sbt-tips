@@ -26,6 +26,8 @@ Examples:
 
     sbt "project core" "dependency-graph"
 
+. . .
+
     sbt "project dsl" "clean" "~ compile"
 
 
@@ -118,5 +120,5 @@ or in recent versions of sbt:
 * Good advice from [\@jsuereth](https://twitter.com/jsuereth):
   <http://jsuereth.com/scala/2013/06/11/effective-sbt.html>
 
-* Example of complex sbt project that's likely to Do Things Right™:
+* Complex sbt project that's probably written the Right Way™:
   <https://github.com/akka/akka/tree/master/project>
