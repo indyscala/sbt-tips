@@ -8,7 +8,6 @@ $if(date-meta)$
   <meta name="dcterms.date" content="$date-meta$" />
 $endif$
   <title>$if(title-prefix)$$title-prefix$ - $endif$$pagetitle$</title>
-  <style type="text/css">code{white-space: pre;}</style>
 $if(highlighting-css)$
   <style type="text/css">
 $highlighting-css$
@@ -44,6 +43,15 @@ $else$
   blockquote { font-style: italic }
   /* Figures are displayed full-page, with the caption on
      top of the image/video */
+  code {
+    white-space: pre;
+    font-size: 70%;
+  }
+  pre {
+    overflow: auto;
+    word-wrap: normal;
+    background-color: #EAEAEA;
+  }
   figure {
     background-color: black;
   }
