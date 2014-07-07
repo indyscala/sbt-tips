@@ -40,6 +40,9 @@ $else$
   h2 { font-size: 120%; }
   h3 { font-size: 100%; }
   q { quotes: "“" "”" "‘" "’"; }
+  a:visited {
+    color: #555555;
+  }
   blockquote { font-style: italic }
   /* Figures are displayed full-page, with the caption on
      top of the image/video */
