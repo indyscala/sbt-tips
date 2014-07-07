@@ -29,7 +29,7 @@ Examples:
     sbt "project dsl" "clean" "~ compile"
 
 
-# Dependency Graph (in simple project)
+# Dependency Graph<br/>(in simple project)
 
 <https://github.com/jrudolph/sbt-dependency-graph>
 
@@ -86,7 +86,8 @@ Let's enable the dependency-graph task globally...
 
 # Plugin Caveat
 
-sbt 0.13.5 (latest release and preview of 1.0) introduces "auto plugins".
+sbt 0.13.5 (latest release and preview of 1.0) introduces
+<a href="http://www.scala-sbt.org/release/tutorial/Using-Plugins.html#Enabling+and+disabling+auto+plugins">auto plugins</a>.
 
 * Still need to add plugin with `addSbtPlugin()` in `project/plugins.sbt`.
 * Plugin settings configuration **for compatible plugins** should be
@@ -99,6 +100,8 @@ sbt 0.13.5 (latest release and preview of 1.0) introduces "auto plugins".
     3.1G   /home/brad/.m2/repository
     1.5G   /home/brad/.ivy2/cache/
 
+. . .
+
 Tell sbt to check your local Maven repo for artifacts with:
 
     resolvers += "Local Maven Repository" at "file://"+Path.userHome.absolutePath+"/.m2/repository"
@@ -106,3 +109,14 @@ Tell sbt to check your local Maven repo for artifacts with:
 or in recent versions of sbt:
 
     resolvers += Resolver.mavenLocal
+
+
+# Random
+
+* (Much Improved) Documentation: <http://www.scala-sbt.org/documentation.html>
+
+* Good advice from [\@jsuereth](https://twitter.com/jsuereth):
+  <http://jsuereth.com/scala/2013/06/11/effective-sbt.html>
+
+* Example of complex sbt project that's likely to Do Things Right™:
+  <https://github.com/akka/akka/tree/master/project>
