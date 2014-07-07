@@ -93,7 +93,7 @@
 <section id="manual-install" class="slide level1">
 <h1>Manual Install</h1>
 <p>Most OSes have packages now, but if you must…</p>
-<pre><code>curl -O &lt;http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.13.5/sbt-launch.jar&gt;
+<pre><code>curl -O http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.13.5/sbt-launch.jar
 
 echo &#39;SBT_OPTS=&quot;-Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M&quot;&#39; &gt; sbt
 echo &#39;java $SBT_OPTS -jar `dirname $0`/sbt-launch.jar &quot;$@&quot;&#39; &gt;&gt; sbt
